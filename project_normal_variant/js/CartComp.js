@@ -37,14 +37,14 @@ Vue.component('cart', {
                 })
         },
     },
-    mounted(){
+    /*mounted(){
         this.$parent.getJson(`${API + this.cartUrl}`)
             .then(data => {
                 for(let el of data.contents){
                     this.cartItems.push(el);
                 }
             });
-    },
+    },*/
     template: `
         <div>
             <button class="btn-cart" type="button" @click="showCart = !showCart">Корзина</button>
